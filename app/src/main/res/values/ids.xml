@@ -7,4 +7,5 @@
     <item name="btnCaptureImage" type="id" />
     <item name="ivPostImage" type="id" />
     <item name="btnSubmit" type="id" />
+    <item name="ivImage" type="id" />
 </resources>

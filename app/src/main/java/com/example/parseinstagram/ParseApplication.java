@@ -10,17 +10,13 @@ public class ParseApplication extends Application {
     @Override
     public void onCreate(){
         super.onCreate();
-
-        // Register your parse models
-        ParseObject.registerSubclass(Post.class);
-
         // set applicationId, and server server based on the values in the Heroku settings.
         // clientKey is not needed unless explicitly configured
         // any network interceptors must be added with the Configuration Builder given this syntax
         Parse.initialize(new Parse.Configuration.Builder(this)
-                .applicationId("kadejah-instagram-codepath") // should correspond to APP_ID env variable
-                .clientKey("CodepathInstagramMoveFast")  // set explicitly unless clientKey is explicitly configured on Parse server
-                .server("https://kadejah-instagram-codepath.herokuapp.com/parse").build());
+                .applicationId("instagram-codepath5") // should correspond to APP_ID env variable
+                .clientKey("MoveFastCodepath")  // set explicitly unless clientKey is explicitly configured on Parse server
+                .server("https://instagram-codepath5-codepath.herokuapp.com/parse").build());
 
     }
 
